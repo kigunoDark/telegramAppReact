@@ -11,6 +11,25 @@ const WorkTimer = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
 
   useEffect(() => {
+    const handleUserAction = () => {
+      if (isActive) {
+        setIsActive(false);
+        setHasLost(true);
+      }
+    };
+
+    // Добавляем слушатели событий
+    window.addEventListener('click', handleUserAction);
+    window.addEventListener('keydown', handleUserAction);
+
+    return () => {
+      // Удаляем слушатели событий при размонтировании компонента
+      window.removeEventListener('click', handleUserAction);
+      window.removeEventListener('keydown', handleUserAction);
+    };
+  }, [isActive]);
+
+  useEffect(() => {
     let interval = null;
     if (isActive && isConfirmed) {
       interval = setInterval(() => {
