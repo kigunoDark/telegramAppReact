@@ -17,9 +17,9 @@
   }
 
   .timer-menu {
-    margin-top: 50%;
+    margin-top: 40%;
     background: rgba(52, 52, 51, 0.7);
-    padding: 20px 0px;
+    padding: 20px 10px;
     border-radius: 8px;
     color: white;
     font-weight: bold;
@@ -74,13 +74,13 @@
     transition: background-color 0.3s ease;
   }
   
-  .btn.start {
+  .btn.accept {
     background-color: #ffcc66;
     color: rgb(22, 21, 21);
     font-weight: bold;
   }
   
-  .btn.start:hover {
+  .btn.accept:hover {
     background-color: #f7b634;
   }
 
@@ -135,4 +135,12 @@
   .btn.cancel:hover {
     background-color: #c82333;
     color: aliceblue;
+  }
+
+  .lost-message {
+    font-size: 14px;
+    color: white;
+  }
+  .lost-message p, .modal-content p {
+    margin: 10px 0px;
   }
