@@ -1,0 +1,16 @@
+.character-area {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character img {
+    position: absolute;
+    width: 200px !important;
+    height: 350px;
+    top: 25%;
+    left: 25%;
+    width: 150px;
+    border-radius: 10px;
+}

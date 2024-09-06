@@ -1,0 +1,138 @@
+
+.timer-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 0;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    z-index:1;
+  }
+  
+  .input-controls {
+    margin-bottom: 20px;
+  }
+
+  .timer-menu {
+    margin-top: 50%;
+    background: rgba(52, 52, 51, 0.7);
+    padding: 20px 0px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .input-controls label {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .input-controls input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background:  rgba(249, 249, 249, 0.5);
+    border: 10px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timer-display h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn.start {
+    background-color: #ffcc66;
+    color: rgb(22, 21, 21);
+    font-weight: bold;
+  }
+  
+  .btn.start:hover {
+    background-color: #f7b634;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+  }
+  
+  .modal-buttons .btn {
+    margin: 0 10px;
+    width: 100px;
+  }
+  
+  .btn.confirm {
+    border: 1px solid #ffcc66;
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn.confirm:hover {
+    background-color: #f7b634;
+  }
+  
+  .btn.cancel {
+    border:1px solid #dc3545;
+    color: black;
+  }
+  
+  .btn.cancel:hover {
+    background-color: #c82333;
+    color: aliceblue;
+  }

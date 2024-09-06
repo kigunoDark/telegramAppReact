@@ -1,0 +1,28 @@
+
+.top-menu {
+    background: rgba(150, 150, 149, 0.5);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.top-menu, .bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: black;
+    background: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-item.active {
+    background-color: #ffcc66;
+}
