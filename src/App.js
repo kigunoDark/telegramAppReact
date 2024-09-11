@@ -15,9 +15,6 @@ const App = () => {
     const queryParams = new URLSearchParams(window.location.search);
     const id = queryParams.get('user_id');
     setUserId(id);
-
-    console.log('start app')
-    console.log(userId)
     if (id) {
         console.log(userId)
         console.log(id)
@@ -29,6 +26,7 @@ const App = () => {
       <Router>
         <AppProvider>
           {/* <Menu /> */}
+          <div>{userId}</div>
           <Routes>
             <Route path="/work" element={<Work />} />
             <Route path="/" element={<Home />} />
