@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
-import "./styles.css"; // Импорт CSS-файла
+import { useAppContext } from "../../AppProvider/AppProvider";
+
+import "./styles.css";
 
 const WorkTimer = () => {
   const [isWorking, setIsWorking] = useState(false);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(25);
-  const [seconds, setSeconds] = useState(0);
+  const [hours, setHours] = useState("");
+  const [minutes, setMinutes] = useState("");
+  const [seconds, setSeconds] = useState("");
   const [isActive, setIsActive] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [hasLost, setHasLost] = useState(false);
-
+  const { balance, setBalance } = useAppContext();
   useEffect(() => {
     const handleUserAction = () => {
       if (isWorking) {
@@ -53,6 +55,7 @@ const WorkTimer = () => {
           setHours((prev) => prev - 1);
         } else {
           clearInterval(interval);
+          setBalance(balance + 10);
           setIsActive(false);
         }
       }, 1000);

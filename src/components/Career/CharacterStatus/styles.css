@@ -1,0 +1,43 @@
+.status-bar {
+  max-width: 300px;
+  width: auto;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Arial", sans-serif;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.balance {
+  color: rgb(72, 229, 72);
+}
+
+.food  {
+  color: rgb(188, 111, 66);
+}
+
+.water {
+  color: aqua;
+}
+
+.status-label {
+  font-weight: bold;
+}
+
+.status-icon {
+  font-size: 0.8rem;
+}
+.status-value {
+  font-weight: normal;
+}
